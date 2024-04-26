@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Website Title</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="main-container">
+			<div id="nav-bar">
+				<!-- Navigation Bar Content -->
+				<nav>
+					<ul>
+						<li><a href="howitworks.html">How it works</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="main-body">
+				<div id="side-bar">
+					<!-- Sidebar Content -->
+					<img src="images/SCR-20240423-dfof.png" alt="Logo" />
+				</div>
+				<div id="content-area">
+					<div id="form-container">
+						<!-- Form Upload -->
+						<section>
+							<h1 class="header-text">
+								EcoFoods: Discover Nutritional Values &
+								Delicious Recipes
+							</h1>
+							<p>Select an image to upload:</p>
+							<form
+								id="upload-form"
+								action="#"
+								method="post"
+								enctype="multipart/form-data"
+							>
+								<div id="drop-zone">
+									<p>
+										Drag and drop an image here <br />
+										or
+									</p>
+									<input
+										type="file"
+										id="image-input"
+										accept="image/*"
+										style="display: none"
+									/>
+								</div>
+								<button type="button" id="upload-button">
+									Upload Image
+								</button>
+								<p id="file-name"></p>
+							</form>
+						</section>
+					</div>
+					<div id="image-display">
+						<!-- Image Display -->
+						<img
+							src="images/pexels-valeriya-1199957.jpg"
+							alt="Uploaded Image"
+							id="displayed-image"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<audio
+			id="upload-sound"
+			src="Cartoon sound effects ping 1.wav"
+			preload="auto"
+		></audio>
+
+		<div id="loading-container" style="display: none">
+			<div class="loading"></div>
+			<p id="loading-text">Loading...</p>
+		</div>
+		<script src="js/script.js" type="module"></script>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Analysis Result</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="main-container">
+			<div id="nav-bar">
+				<!-- Navigation Bar Content -->
+				<nav>
+					<ul>
+						<li><a href="howitworks.html">How it works</a></li>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="main-body">
+				<div id="side-bar">
+					<!-- Sidebar Content -->
+					<a href="index.html">
+						<!-- Link to the index page -->
+						<img src="images/SCR-20240423-dfof.png" alt="Logo" />
+					</a>
+				</div>
+				<div id="content-area">
+					<div id="form-container">
+						<!-- Display the previously uploaded image -->
+						<div class="result-title">
+							<h1>Analysis Result</h1>
+						</div>
+						<div class="image-container">
+							<img
+								id="uploaded-image"
+								alt="Uploaded Image"
+								style="display: none; width: 100%"
+							/>
+						</div>
+					</div>
+					<div id="result-display">
+						<div class="result-box" id="results">
+							<!-- Results will be loaded here -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<audio
+			id="toggle-sound"
+			src="Cartoon sound effects ping 1.wav"
+			preload="auto"
+		></audio>
+
+		<script src="js/result.js" type="module"></script>
+	</body>
+</html>
